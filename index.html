@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Nature Gallery</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search nature photos...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery" id="gallery"></div>
+        
+        <!-- Image Modal -->
+        <div class="modal" id="image-modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div class="caption-container">
+                <p id="caption"></p>
+                <a id="download-btn" target="_blank"><i class="fas fa-download"></i> Download</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by Unsplash API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
